@@ -38,15 +38,18 @@
 
 /* Code */
 
+* {
+	font-family: 'Inter';
+	font-style: normal;
+}
 body {
 	max-width: 1920px;
 	margin: auto;
 }
-* {
-	font-family: 'Inter';
-	font-style: normal;
-	font-display: swap;
-}
+img {
+	max-width: 100%;
+	height: auto;
+  }
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -120,20 +123,20 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
-.about-me__introduction {
-	font-family: 'Spectral';
-	font-weight: 800;
-	font-style: italic;
-	width: 60%;
-}
 #about-me p {
 	width: 80%;
 	font-size: 14px;
 }
-
-#gallery {
-	/*	min-height: 100vh; */
+#about-me .about-me__introduction {
+	font-family: 'Spectral';
+	font-size: 1rem;
+	font-weight: 800;
+	font-style: italic;
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
+	width: 60%;
 }
+
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -141,13 +144,16 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link, .active-tag {
+.nav-pills .nav-link {
+	color: #000;
+}
+.nav-pills .nav-link.active, .nav-link.active-tag, .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #BEB45A;
-	border-radius:0 ;
+	border-radius: 0;
 }
-.nav-pills .nav-link {
-	color: #000
+.nav-link{
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -185,13 +191,14 @@ body {
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
+	font-size: 2.4rem;
 	font-style: italic;
 	font-weight: 300;
-
+	line-height: 1.2;
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -254,7 +261,9 @@ body {
 }
 .form-container {
 	flex : 2;
-
+}
+.form-container > h2 {
+	font-size: 1.7rem;
 }
 form {
 	display: flex;
@@ -285,6 +294,47 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+footer{
+	display: grid;
+	place-content: center;
+	background-color: #D8D3A8;
+}
+
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 30px;
+	padding: 20px 0;
+}
+
+.footer-content{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-title{
+	font-size: 1.3rem;
+	font-family: 'Spectral';
+	font-weight: 300;
+}
+
+.footer-contact{
+	display: flex;
+}
+
+.footer-phone{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-number{
+	text-decoration: none;
+	color: #1C6474;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -296,7 +346,8 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+
+	#about-me p, #about-me .about-me__introduction {
 		width: 100%;
 	}
 }
@@ -392,6 +443,9 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+	.footer{
+		flex-direction: column;
 	}
 }
 
