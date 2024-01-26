@@ -23,8 +23,8 @@
 	<meta name="twitter:image" content="https://nomera67.github.io/OC-projet5/assets/images/nina.webp" />
 	<meta name="twitter:image:alt" content="Nina Carducci, photographe">
 	<!-- Scripts -->
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" rel="preload">
-	<link rel="stylesheet" href="./assets/style.min.css" rel="preload">
+	<link rel="stylesheet preload" as="style" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet preload" as="style" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
@@ -59,6 +59,7 @@
 					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1200.webp 1190w,
 					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-600.webp 600w,
 					./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-300.webp 300w"
+					sizes="100vw"
 					alt="Personne en costume marchant sur un passage piéton à Tokyo">
 				</div>
 				<div class="carousel-item">
@@ -76,7 +77,7 @@
 					srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1600.webp 1590w,
 					./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1200.webp 1190w,
 					./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-600.webp 600w,
-					./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-300.webp 300w,"
+					./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-300.webp 300w"
 					sizes="100vw"
 					alt="Mariés s'embrassant lors de leur mariage"
 					loading="lazy">
@@ -96,6 +97,7 @@
 		<div class="picture left">
 			<img src="./assets/images/nina.webp" 
 			srcset="./assets/images/nina-450.webp 450w"
+			sizes="(max-width: 450px) 100vw, 450px"
 			alt="Photo de Nina Carducci"
 			loading="lazy">
 		</div>
@@ -227,7 +229,7 @@
 			<div class="footer-contact">
 				<div class="footer-phone">
 					<p>Téléphone: <a href="tel:+33556677889" itemprop="telephone" class="footer-number">05 56 67 78 89</a></p>
-					<time datetime="Mo-Fr 10:00-19:00" class="footer-date">Du lundi au vendredi de 10H à 19H</time></p>
+					<p class="footer-date">Du lundi au vendredi de 10H à 19H</p>
 				</div>
 				
 			</div>
