@@ -1,4 +1,4 @@
-# Projet 3 d'OpenClassrooms : Nina Carducci, photographe
+# Projet 5 d'OpenClassrooms : Nina Carducci, photographe
 
 Bienvenue sur mon repository GitHub destiné à la réalisation du projet 5 de la formation de développeur web OpenClassrooms : « Débuggez et optimisez un site de photographe »
 
